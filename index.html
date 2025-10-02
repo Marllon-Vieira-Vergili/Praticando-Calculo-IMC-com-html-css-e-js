@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora-IMC</title>
+
+    <!--CSS styles-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--Script JS-->
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!--Seção main - Principal-->
+
+    <!--Overlay no papel de parede-->
+   <div class="overlay"></div>
+
+    <main id="secao-principal">
+ 
+    
+
+      <div class="container">
+        
+        <!--Conteúdo dentro do container-->
+        <h1 id="titulo">CALCULADORA DE IMC</h1>
+        <hr/>
+        <form id="form-imc">
+
+          <!--Labels de entrada de dados-->
+          <label for="altura">Altura:</label>
+          <input type="text" id="altura" placeholder="Digite aqui sua altura" required />
+
+          <label for="peso">Peso:</label>
+          <input type="text" id="peso" placeholder="Digite aqui seu peso" required />
+
+          <div id="btn-group">
+            <button id="calcular">Calcular</button>
+            <button id="limpar">Limpar</button>
+          </div>
+
+        </form>
+
+        <!--Seção Mostrar o cálculo IMC-->
+        <section id="mostrar-imc">
+          <div id="container-mostrar-imc">
+            <p >Seu IMC é de: 
+                <br>
+                 <small id="valor-imc"></small></p>
+            <p>
+              Com base no seu IMC, você está considerado:
+              <br/>
+              <mark id="categoria-imc"></mark>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

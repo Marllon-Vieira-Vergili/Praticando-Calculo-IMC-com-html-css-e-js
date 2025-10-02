@@ -1,0 +1,221 @@
+/*Reset navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url("./../img/plano-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+
+}
+
+/*Overlay papel de parede*/
+.overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+ background-color: rgba(0,0,0,0.5); 
+ z-index: 1;  
+}
+
+
+#secao-principal{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background: linear-gradient(135deg, rgba(103, 103, 103, 0.24), rgba(144, 137, 137, 0.295));
+    border: 1px solid #686868;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+
+.container{
+    display: inline;
+    justify-self: center;
+    background: linear-gradient(135deg, rgba(179, 179, 179, 0.24), rgba(255, 255, 255, 0.434));
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
+#titulo{
+    color: rgba(0, 0, 0, 0.704);
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica;
+    margin-bottom: -30px;
+    display: flex;
+    padding: 1.5rem;
+}
+
+hr{
+    border: 2px solid;
+    color: rgba(46, 46, 46, 0.816);
+    margin: 0.5rem 1.5rem 2rem;
+    
+}
+
+#form-imc{
+    display: inline;
+    
+}
+
+
+label{
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+input{
+    display: flex;
+    margin: 1rem ;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(179, 179, 179, 0.24), rgba(255, 255, 255, 0.434));
+
+    justify-self: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+input[type="text"]{
+    color: white ;
+    font-size: large;
+    font-weight: bold;
+}
+
+input:hover{
+    border: none;
+    
+    background: linear-gradient(135deg, rgba(157, 157, 157, 0.24), rgba(198, 198, 198, 0.434));
+}
+
+
+button{
+    display: inline;
+    margin: 1rem ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    transition: 0.2s ease;
+}
+
+#calcular{
+    background-color: rgba(15, 249, 23, 0.829);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#limpar{
+    background-color: rgba(249, 15, 15, 0.829);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background: linear-gradient(135deg, rgba(163, 117, 117, 0), rgba(101, 101, 101, 0.449));
+}
+#btn-group{
+    text-align: center;
+    padding: 0.3rem;
+}
+
+/*Seção mostrar imc*/
+
+#mostrar-imc{
+    
+    border-top: 5px solid #515050;
+}
+
+#container-mostrar-imc{
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+small, #categoria-imc{
+    
+    display: inline-flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    background: #f6ff00;
+    margin-top: 1rem;
+    border: 1px solid #adabab;
+    padding: 1rem;
+    border-radius: 5%;
+    
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 768px){
+    
+    #secao-principal{
+        height: 100%;
+        width: 80%;
+        margin: 1rem auto;
+        padding: 1rem;
+      
+    }
+    /*Input e botões*/
+    input, button{
+        width: 90%;
+        font-size:1rem;
+    }
+
+    #titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  small, #categoria-imc {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
